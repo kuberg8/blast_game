@@ -5,7 +5,7 @@ const CacheKey = "cache-v1";
 const initCache = () => {
   return caches.open(CacheKey).then(
     (cache) => {
-      return cache.addAll(["./index.html"]);
+      return cache.addAll(["./index.html", './404.html']);
     },
     (error) => {
       console.log(error);
